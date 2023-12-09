@@ -15,13 +15,20 @@
     </head>
 
     <body class="hold-transition sidebar-mini layout-fixed">
-        <div class="wrapper"
-        
+        <div class="wrapper">        
             <div th:replace="~{/shared/_placeholder}"></div>
             <div th:replace="~{/shared/_navbar}"></div>
             <div th:replace="~{/shared/_sidebar}"></div>
             
-            <div layout:fragment="content"></div>
+            <!-- Content Wrapper. Contains page content -->
+          
+                <div class="content-wrapper">
+                    <div layout:fragment="content"></div>
+
+                    
+                </div>
+           <div th:replace="~{/shared/_footer}"></div>
+            
         </div>
     
 
